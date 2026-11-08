@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalom Capital - Secure Your Funding Fast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        orange: {
+                            500: '#ff6600',
+                            600: '#e65c00',
+                        },
+                        zinc: {
+                            900: '#18181b',
+                            950: '#161618',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            background-color: #161618;
+            color: white;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(255, 102, 0, 0.15), transparent 40%);
+        }
+        
+        /* Hero Cards Styling */
+        .hero-card {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .hero-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px rgba(255, 102, 0, 0.2);
+        }
+
+        /* Interactive Informational Cards Styling (Neon Glow) */
+        .interactive-card {
+            border-width: 2px;
+            border-color: black;
+            transition: all 0.3s ease;
+        }
+        .interactive-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 15px 5px rgba(255, 102, 0, 0.6);
+            border-color: #ff6600;
+        }
+    </style>
+</head>
+<body class="selection:bg-orange-500 selection:text-white text-base">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-[#161618]/90 backdrop-blur-md border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo with clip-path to show only the pendant -->
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 flex-shrink-0">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipNQpQO82EykfV8-4pRta2kmoy0y1TEPiO_IhNkx" alt="Chalom Capital Logo" style="clip-path: circle(48% at 50% 50%); object-fit: cover; width: 100%; height: 100%;">
+                    </div>
+                    <span class="font-semibold text-2xl tracking-tight text-white">Chalom Capital</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 text-base font-medium text-zinc-300">
+                    <a href="#home" class="hover:text-white transition">Home</a>
+                    <a href="#services" class="hover:text-white transition">Service</a>
+                    <a href="#affiliate" class="hover:text-white transition">Affiliate Program</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:flex">
+                    <a href="#" class="bg-zinc-800 hover:bg-zinc-700 text-white text-base font-medium px-5 py-2.5 rounded-full transition flex items-center gap-2 shadow-[0_0_15px_rgba(255,102,0,0.2)] border border-zinc-700">
+                        Apply Now
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden hero-gradient scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div>
+                    <!-- Two-line title -->
+                    <h1 class="text-6xl md:text-7xl lg:text-[5rem] font-bold tracking-tighter leading-tight mb-6 text-white">
+                        SECURE YOUR FUNDING<br>FAST.
+                    </h1>
+                    <h2 class="text-2xl lg:text-3xl text-zinc-400 mb-6 font-medium">
+                        Get Up to $100,000 in Funding<br>in as a Quick As 48 Hours !
+                    </h2>
+                    
+                    <ul class="space-y-3 mb-10 text-base lg:text-lg text-zinc-300">
+                        <li class="flex items-center gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-orange-500"></div> No Impact To Credit Score
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Fast Approvals
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Equipment Financing
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Transportation Business Loans
+                        </li>
+                        <!-- Reordered: Home Improvement Loans under Transportation -->
+                        <li class="flex items-center gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Home Improvement Loans
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Contract Funding
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Startup Funding (720+ Credit Score)
+                        </li>
+                    </ul>
+
+                    <a href="#" class="inline-block bg-orange-600 hover:bg-orange-500 text-white font-semibold px-8 py-4 text-lg rounded-full transition shadow-[0_0_15px_rgba(255,102,0,0.5)]">
+                        Get Funded Now
+                    </a>
+                </div>
+
+                <!-- Visual Element / Business Funding Image -->
+                <div class="relative h-[500px] hidden lg:flex items-center justify-center">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipN-2CApDZwCyhaK92_qYVg2ig1sOJwNkwIY4TqJ" alt="Business Funding Program" class="w-full h-auto object-cover rounded-2xl shadow-2xl transition-transform duration-500 hover:-translate-y-2">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-white py-24 text-zinc-900 border-t border-zinc-200 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold mb-3">Our <span class="text-orange-500">Services</span></h2>
+                <p class="text-zinc-600 text-xl font-medium">Funding Solutions <span class="text-orange-500 font-semibold">Built For You</span></p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1: Term Loan with House Icon and 20px subtext -->
+                <div class="bg-[#161618] rounded-2xl p-8 flex flex-col interactive-card">
+                    <div class="text-orange-500 mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 text-white">Term Loan</h3>
+                    <p class="text-xs font-bold text-orange-500 uppercase tracking-widest mb-4">FLEXIBLE REPAYMENT TERMS</p>
+                    <p class="text-zinc-400 leading-relaxed text-[20px]">
+                        Get a lump sum of capital upfront and repay it over a set period with predictable, fixed payments. Perfect for large investments like equipment, expansion, or inventory—giving you the funds you need today with terms that fit your cash flow.
+                    </p>
+                </div>
+
+                <!-- Card 2: Equipment Financing -->
+                <div class="bg-[#161618] rounded-2xl p-8 flex flex-col interactive-card">
+                    <div class="text-orange-500 mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Equipment Financing</h3>
+                    <p class="text-zinc-400 text-base leading-relaxed mb-6">
+                        Upgrade your trucks, machinery, or technology with financing built for heavy assets. Keep your working capital intact while spreading the cost over manageable terms.
+                    </p>
+                    <p class="font-bold text-base mb-2 text-white">Financing Up To $600,000</p>
+                    <div class="mt-auto pt-4 border-t border-zinc-800">
+                        <p class="text-xs font-bold text-orange-500 uppercase tracking-widest mb-1">Minimum Requirements</p>
+                        <p class="text-zinc-400 text-base">$15,000 monthly revenue & 6 months in business</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Home Improvement Loans -->
+                <div class="bg-[#161618] rounded-2xl p-8 flex flex-col interactive-card">
+                    <div class="text-orange-500 mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Home Improvement Loans</h3>
+                    <p class="text-zinc-400 text-base leading-relaxed mb-6">
+                        Designed for Home Owners, and Renovation businesses. Secure the working capital necessary to purchase materials, hire additional crew members, and take on larger residential projects without waiting for client payouts.
+                    </p>
+                    <ul class="space-y-3 text-base text-zinc-400 mt-auto">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-orange-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Cover upfront material costs.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-orange-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>Bridge gaps between project phases.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 4 (CTA): Spanning bottom row -->
+                <div class="md:col-span-3 bg-[#161618] rounded-2xl p-10 flex flex-col justify-center relative overflow-hidden interactive-card border border-zinc-800">
+                    <div class="relative z-10 max-w-3xl">
+                        <h3 class="text-3xl font-bold mb-4 leading-snug text-white">Applying Doesn't Mean You Have to<br>Take the Money</h3>
+                        <p class="text-zinc-400 text-base leading-relaxed mb-8">
+                            Let's be clear about what applying actually does, and doesn't, commit you to. If you're approved, you get to review your full approval: the amount, the terms, the repayment details. Then you decide whether the funding makes sense for your business. No pressure, no lock-in. We're here to provide guidance and expertise to help you achieve your desired outcome.
+                        </p>
+                        <a href="#" class="inline-block bg-orange-600 hover:bg-orange-500 text-white font-semibold px-8 py-3 text-lg rounded-lg transition shadow-md">
+                            Apply Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="bg-black text-white py-24 border-y border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold mb-3">Our <span class="text-orange-500">Process</span></h2>
+                <p class="text-zinc-400 text-xl font-medium">Steps To <span class="text-orange-500 font-semibold">Success</span></p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6">
+                    <div class="bg-white text-zinc-900 rounded-2xl p-6 flex gap-6 items-start interactive-card cursor-pointer">
+                        <div class="w-12 h-12 rounded-xl bg-orange-50 text-orange-600 font-bold text-2xl flex items-center justify-center shrink-0">1</div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-1">Tell us about your business.</h4>
+                            <p class="text-zinc-600 text-base">Complete our business funding application.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white text-zinc-900 rounded-2xl p-6 flex gap-6 items-start interactive-card cursor-pointer">
+                        <div class="w-12 h-12 rounded-xl bg-orange-50 text-orange-600 font-bold text-2xl flex items-center justify-center shrink-0">2</div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-1">Meet Your Advisor</h4>
+                            <p class="text-zinc-600 text-base">We connect you with a dedicated Business funding Advisor.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white text-zinc-900 rounded-2xl p-6 flex gap-6 items-start interactive-card cursor-pointer">
+                        <div class="w-12 h-12 rounded-xl bg-orange-50 text-orange-600 font-bold text-2xl flex items-center justify-center shrink-0">3</div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-1">Get Approved</h4>
+                            <p class="text-zinc-600 text-base">Compare offers with expert advice from our team and select the best options.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white text-zinc-900 rounded-2xl p-6 flex gap-6 items-start interactive-card cursor-pointer">
+                        <div class="w-12 h-12 rounded-xl bg-orange-50 text-orange-600 font-bold text-2xl flex items-center justify-center shrink-0">4</div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-1">Get Funded!</h4>
+                            <p class="text-zinc-600 text-base">In as little as 24 - 48 hours, you have the funds you need!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center w-full">
+                    <div class="w-full max-w-md bg-[#fafafa] rounded-[2.5rem] p-8 md:p-10 shadow-2xl border border-zinc-200">
+                        <div class="flex justify-between items-center mb-8">
+                            <div>
+                                <h3 class="text-2xl font-bold text-slate-800">Your Funding</h3>
+                                <p class="text-slate-500 text-sm mt-1">Capital to Grow your Business.</p>
+                            </div>
+                            <button class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:bg-slate-50 transition">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                            </button>
+                        </div>
+
+                        <div class="bg-[#1a1f2e] rounded-2xl p-5 mb-4 shadow-lg text-white">
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold">Platinum Debit</div>
+                                        <div class="text-slate-400 text-sm tracking-widest mt-0.5">**** 8842</div>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="font-bold text-lg">$24,500.00</div>
+                                    <div class="text-orange-500 text-sm mt-0.5 font-medium">Active</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl p-5 mb-10 shadow-sm border border-slate-100 text-slate-800">
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-10 h-10 rounded-full bg-orange-50 flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold">Business Account</div>
+                                        <div class="text-slate-400 text-sm tracking-widest mt-0.5">**** 1129</div>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="font-bold text-lg">$ 50,000.00</div>
+                                    <div class="text-slate-400 text-sm mt-0.5 font-medium">Active</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-6 px-1">
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center gap-4">
+                                    <svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                                    <span class="text-slate-700 font-semibold">Cargo Van</span>
+                                </div>
+                                <span class="text-slate-600 font-mono font-medium">-$33,000</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center gap-4">
+                                    <svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                                    <span class="text-slate-700 font-semibold">Apple Store</span>
+                                </div>
+                                <span class="text-slate-600 font-mono font-medium">-$1,299.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Success Stories -->
+    <section class="bg-white py-24 text-center text-zinc-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-5xl font-bold mb-2">Client <span class="text-orange-500">Success Stories</span></h2>
+            <p class="text-zinc-600 text-lg font-medium mb-12">Real Results for <span class="text-orange-500 font-semibold">Real People</span></p>
+
+            <div class="bg-black rounded-[2rem] p-10 md:p-14 relative text-left interactive-card mb-12 border border-zinc-800">
+                <svg class="absolute top-8 right-8 w-16 h-16 text-zinc-800" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+
+                <div class="flex gap-1 text-orange-500 mb-6 relative z-10">
+                    <!-- 5 Stars -->
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                </div>
+
+                <p class="text-2xl md:text-3xl italic font-medium text-zinc-300 leading-snug mb-8 relative z-10">
+                    "The term loan we received allowed us to hire three new developers and scale our software platform. Having a dedicated advisor made all the difference in choosing the right offer."
+                </p>
+
+                <div class="flex items-center justify-between border-t border-zinc-800 pt-6 mt-6">
+                    <div>
+                        <div class="font-bold text-xl text-white">Emily Watson</div>
+                        <div class="text-base text-zinc-400">Tech Startup CEO</div>
+                    </div>
+                    <div class="text-xs font-bold text-orange-600 bg-orange-950/50 px-4 py-2 rounded-full uppercase tracking-wider">
+                        TERM LOANS
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <!-- Card 1 -->
+                <div class="bg-black rounded-2xl p-8 interactive-card border border-zinc-800">
+                    <div class="flex items-center gap-3 mb-6">
+                        <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        <span class="font-bold text-base tracking-wider text-white">SUCCESS STORY</span>
+                    </div>
+                    <div class="mb-6">
+                        <div class="text-xs font-bold text-orange-500 mb-2 uppercase tracking-widest">FUNDED AMOUNT</div>
+                        <div class="text-5xl font-bold text-white">$275,000</div>
+                    </div>
+                    <div class="space-y-4 text-base border-t border-zinc-800 pt-6">
+                        <div class="flex justify-between"><span class="text-zinc-400">Industry</span><span class="font-semibold text-white">Restaurant</span></div>
+                        <div class="flex justify-between"><span class="text-zinc-400">Funded in</span><span class="font-semibold text-orange-600">5 days</span></div>
+                        <div class="flex justify-between"><span class="text-zinc-400">Years in business</span><span class="font-semibold text-white">5</span></div>
+                        <div class="flex justify-between"><span class="text-zinc-400">State</span><span class="font-semibold text-white">Florida</span></div>
+                        <div class="flex justify-between"><span class="text-zinc-400">Fico</span><span class="font-semibold text-white">685</span></div>
+                        <div class="flex justify-between"><span class="text-zinc-400">Use of funds</span><span class="font-semibold text-white">Expansion</span></div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-black rounded-2xl p-8 interactive-card border border-zinc-800">
+                    <div class="flex items-center gap-3 mb-6">
+                        <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        <span class="font-bold text-base tracking-wider text-white">SUCCESS STORY</span>
+                    </div>
+                    <div class="mb-6">
+                        <div class="text-xs font-bold text-orange-500 mb-2 uppercase tracking-widest">FUNDED AMOUNT</div>
+                        <div class="text-5xl font-bold text-white">$108,000</div>
+                    </div>
+                    <div class="space-y-4 text-base border-t border-zinc-800 pt-6">
+                        <div class="flex justify-between"><span class="text-zinc-400">Industry</span><span class="font-semibold text-white">E-commerce</span></div>
+                        <div class="flex justify-between"><span class="text-zinc-400">Funded in</span><span class="font-semibold text-orange-600">3 days</span></div>
+                        <div class="flex justify-between"><span class="text-zinc-400">Years in business</span><span class="font-semibold text-white">8 yrs</span></div>
+                        <div class="flex justify-between"><span class="text-zinc-400">State</span><span class="font-semibold text-white">North Carolina</span></div>
+                        <div class="flex justify-between"><span class="text-zinc-400">Fico</span><span class="font-semibold text-white">645</span></div>
+                        <div class="flex justify-between"><span class="text-zinc-400">Use of funds</span><span class="font-semibold text-white">Inventory</span></div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-black rounded-2xl p-8 interactive-card border border-zinc-800">
+                    <div class="flex items-center gap-3 mb-6">
+                        <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        <span class="font-bold text-base tracking-wider text-white">SUCCESS STORY</span>
+                    </div>
+                    <div class="mb-6">
+                        <div class="text-xs font-bold text-orange-500 mb-2 uppercase tracking-widest">FUNDED AMOUNT</div>
+                        <div class="text-5xl font-bold text-white">$41,000</div>
+                    </div>
+                    <div class="space-y-4 text-base border-t border-zinc-800 pt-6">
+                        <div class="flex justify-between"><span class="text-zinc-400">Industry</span><span class="font-semibold text-white">Laundry Mat</span></div>
+                        <div class="flex justify-between"><span class="text-zinc-400">Funded in</span><span class="font-semibold text-orange-600">2 days</span></div>
+                        <div class="flex justify-between"><span class="text-zinc-400">Years in business</span><span class="font-semibold text-white">2 yrs</span></div>
+                        <div class="flex justify-between"><span class="text-zinc-400">State</span><span class="font-semibold text-white">Alabama</span></div>
+                        <div class="flex justify-between"><span class="text-zinc-400">Fico</span><span class="font-semibold text-white">575</span></div>
+                        <div class="flex justify-between"><span class="text-zinc-400">Use of funds</span><span class="font-semibold text-white">Equipment</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Become a Partner Section -->
+    <section id="affiliate" class="bg-[#161618] py-24 text-white border-t border-zinc-900 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 max-w-3xl mx-auto">
+                <h2 class="text-5xl md:text-6xl font-bold tracking-tight mb-4 uppercase">BECOME A <br><span class="text-orange-500">PARTNER</span></h2>
+                <p class="text-zinc-400 text-xl leading-relaxed">
+                    If you work with entrepreneurs, investors, or business owners seeking capital, this partnership program was designed with you in mind. Earn up to <span class="text-orange-500 font-bold">$5,000 per month</span> in passive income by referring qualified clients to our team.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6">
+                    <div class="bg-white rounded-3xl p-6 flex gap-6 items-center interactive-card border border-zinc-200">
+                        <div class="w-14 h-14 rounded-full bg-orange-600 text-white font-bold text-2xl flex items-center justify-center shrink-0">1</div>
+                        <div>
+                            <h4 class="text-2xl font-bold mb-1 text-zinc-900">Provide Client Info</h4>
+                            <p class="text-zinc-600 text-base">Provide the clients name, phone number, and need for financing.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl p-6 flex gap-6 items-center interactive-card border border-zinc-200">
+                        <div class="w-14 h-14 rounded-full bg-orange-600 text-white font-bold text-2xl flex items-center justify-center shrink-0">2</div>
+                        <div>
+                            <h4 class="text-2xl font-bold mb-1 text-zinc-900">Sit Back & Relax</h4>
+                            <p class="text-zinc-600 text-base">We handle the entire funding process with clients directly.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl p-6 flex gap-6 items-center interactive-card border border-zinc-200">
+                        <div class="w-14 h-14 rounded-full bg-orange-600 text-white font-bold text-2xl flex items-center justify-center shrink-0">3</div>
+                        <div>
+                            <h4 class="text-2xl font-bold mb-1 text-zinc-900">Receive Commission</h4>
+                            <p class="text-zinc-600 text-base">Once Client has been funded, receive your affiliate commision</p>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <a href="#" class="inline-block bg-orange-600 hover:bg-orange-500 text-white font-semibold px-8 py-4 text-lg rounded-xl transition shadow-[0_0_15px_rgba(255,102,0,0.5)]">
+                            Sign Up Now
+                        </a>
+                        <p class="text-base text-zinc-500 mt-3">Join our affiliate program and start earning -</p>
+                    </div>
+                </div>
+
+                <div class="relative h-96 hidden md:block">
+                    <div class="absolute bottom-0 left-0 right-16 h-64 bg-zinc-900 rounded-3xl p-6 interactive-card border border-zinc-800">
+                        <svg class="w-full h-full text-orange-500" viewBox="0 0 400 150" fill="none" preserveAspectRatio="none">
+                            <path d="M0 100 C 50 100, 100 50, 150 70 C 200 90, 250 20, 300 100 C 350 180, 380 0, 400 0" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                            <circle cx="250" cy="20" r="5" fill="currentColor" />
+                        </svg>
+                        <div class="absolute top-8 left-1/2 ml-4 bg-zinc-800 border border-zinc-700 text-white text-xs px-2 py-1 rounded font-bold shadow-sm">85%</div>
+                        <div class="absolute bottom-4 left-0 right-0 flex justify-between px-8 text-sm text-zinc-500 uppercase font-semibold">
+                            <span>Jan</span><span>Feb</span><span class="text-white font-bold">Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+                        </div>
+                    </div>
+                    
+                    <div class="absolute top-0 right-0 w-72 h-72 bg-white rounded-3xl p-6 flex flex-col justify-between z-10 interactive-card border border-zinc-200">
+                        <div>
+                            <p class="text-xs font-bold text-zinc-500 tracking-widest uppercase mb-2">Partner Commission</p>
+                            <h3 class="text-6xl font-bold text-orange-500 mb-2">$500</h3>
+                        </div>
+                        <div class="flex justify-between items-end text-xs text-zinc-400 uppercase font-semibold mt-auto mb-2">
+                            <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-20 relative overflow-hidden border-t border-zinc-200 text-zinc-600">
+        <!-- Giant Background Text -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
+            <span class="text-[10vw] font-black text-orange-500 opacity-10 whitespace-nowrap tracking-tighter">CHALOM CAPITAL</span>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <!-- Branding & Address -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 flex-shrink-0">
+                            <img src="Logo_3.jpg" alt="Chalom Capital Logo" style="clip-path: circle(48% at 50% 50%); object-fit: cover; width: 100%; height: 100%;">
+                        </div>
+                        <span class="font-semibold text-2xl tracking-tight text-zinc-900">Chalom Capital</span>
+                    </div>
+                    <p class="text-zinc-600 mb-6 max-w-md text-base leading-relaxed">
+                        Secure the funding your business needs to thrive. Fast approvals, flexible terms, and dedicated advisory.
+                    </p>
+                    <div class="space-y-2 text-base text-zinc-600">
+                        <p>4030 Wake Forest Road STE 349</p>
+                        <p>Raleigh, NC, 27609, USA</p>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-zinc-900 font-bold mb-6 text-lg tracking-wider">Quick Links</h4>
+                    <ul class="space-y-4 text-base">
+                        <li><a href="#home" class="hover:text-orange-500 transition">Home</a></li>
+                        <li><a href="#services" class="hover:text-orange-500 transition">Services</a></li>
+                        <li><a href="#affiliate" class="hover:text-orange-500 transition">Affiliate Program</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition">Apply Now</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="text-zinc-900 font-bold mb-6 text-lg tracking-wider">Legal</h4>
+                    <ul class="space-y-4 text-base">
+                        <li><a href="#" class="hover:text-orange-500 transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-zinc-200 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+                <p>&copy; 2026 Chalom Capital. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="text-zinc-400 hover:text-orange-500 transition">
+                        <span class="sr-only">LinkedIn</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
